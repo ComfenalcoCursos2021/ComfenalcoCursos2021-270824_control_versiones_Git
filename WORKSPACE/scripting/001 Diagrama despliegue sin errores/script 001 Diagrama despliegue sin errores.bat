@@ -66,6 +66,7 @@ git checkout produccion
 git merge preproduccion
 
 REM CORRECCION
+REM CORRECCION A2
 
 
 
