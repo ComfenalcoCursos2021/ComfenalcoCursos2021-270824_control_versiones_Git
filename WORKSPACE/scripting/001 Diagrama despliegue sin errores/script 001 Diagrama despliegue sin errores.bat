@@ -56,5 +56,14 @@ git commit -m "funcion multiplicar"
 git checkout produccion
 git merge preproduccion
 
+git checkout pruebas
+git merge desarrollo
+
+git checkout preproduccion
+git merge pruebas
+
+git checkout produccion
+git merge preproduccion
+
 
 
