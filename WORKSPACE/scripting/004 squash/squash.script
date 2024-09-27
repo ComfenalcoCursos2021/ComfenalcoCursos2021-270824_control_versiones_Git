@@ -1,0 +1,59 @@
+del->.git
+del->notas.txt
+del->.gitignore
+
+pause->1000
+
+create->.gitignore
+add->.gitignore->*.jar
+add->.gitignore->*.script
+command->git add .gitignore
+create->notas.txt
+mod->notas.txt->1->linnea 1
+command->git init
+command->git add notas.txt
+command->git commit -m "commit inicial"
+mod->notas.txt->1->linea 1
+command->git add notas.txt
+command->git commit -m "COMENTARIO USUALMENTE DESDE NOTEPAD"
+
+
+mod->notas.txt->2->linea 2
+command->git commit -am "Agregando la linea 2"
+
+mod->notas.txt->3->linea 3
+command->git commit -am "Agregando la linea 3"
+
+mod->notas.txt->4->linea 4
+command->git commit -am "Agregando la linea 4"
+
+mod->notas.txt->5->linea 5
+command->git commit -am "Agregando la linea 5"
+
+REM command->git remote add origin  https://localhost:8443/r/squash1.git
+REM command->git push --set-upstream origin main
+REM command->git push
+
+command->git branch nuevas_lineas
+command->git checkout nuevas_lineas
+add->notas.txt->nueva linea 6
+command->commit -am "nueva linea 6"
+add->notas.txt->nueva linea 7
+command->commit -am "nueva linea 7"
+command->git checkout main
+mod->notas.txt->2-> // arreglando ->false
+command->git commit -am "arreglando desde main"
+command->git checkout nuevas_lineas
+add->notas.txt->nueva linea 8
+command->commit -am "nueva linea 8"
+
+command->git checkout main
+mod->notas.txt->4-> // arreglando 4->false
+command->git commit -am "arreglando  4 desde main"
+
+command->git checkout nuevas_lineas
+command->git merge main
+command->git checkout main 
+command->git merge nuevas_lineas
+REM command->git push
+command->git log --oneline

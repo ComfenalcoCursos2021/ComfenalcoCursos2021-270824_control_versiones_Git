@@ -1,0 +1,25 @@
+del /s /q .git
+rd /s /q .git
+
+
+del notas.txt
+del .gitignore
+
+REM CON LA CONFIGURACION ACTUAL DE GIT LA RAMA PRINCIPAL RECIBE EL NOMBRE DE (main)
+REM PARA CAMBIAR EL NOMBRE DE LA RAMA PRINCIPAL SE USARIA (git branch -M main)
+git init 
+git branch -M main
+
+echo *.bat >> .gitignore
+
+git add .gitignore
+git commit -m "Inicial"
+
+git branch desarrollo REM LA RAMA GENERALMENTE LLAMADA [dev], DONDE ESTA TODO LO NUEVO Y LAS MEJORAS
+git branch pruebas REM LA RAMA GENERALMENTE SE LLAMA [qa], DONDE ESTA VERSION ESTABLE DE DESARRALLO
+git branch preproduccion REM LA RAMA GENERALMENTE SE LLAMA [preprod], DONDE ESTA VERSION ESTABLE DE DESARRALLO
+git branch produccion REM LA RAMA GENERALMENTE SE LLAMA [prod], DONDE ESTA LO QUE EL EQUIPO DE PRUEBAS YA PROBO Y TIENE EL AVAL DE QUE EL USUARIO FINAL LO PUEDA VER
+
+
+
+
