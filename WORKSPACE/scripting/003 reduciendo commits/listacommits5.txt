@@ -1,0 +1,6 @@
+00d7365 todas las actualizacion
+ff30fb1 actualizacion 1
+5d11310 funcion dividir
+3d8947a funcion restar
+856027f funcion sumar
+eecfd07 Inicial

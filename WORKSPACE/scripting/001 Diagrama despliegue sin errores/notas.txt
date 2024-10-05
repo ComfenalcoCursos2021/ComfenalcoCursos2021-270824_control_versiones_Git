@@ -1,0 +1,4 @@
+sumar(a,b) 
+restar(a,b) 
+dividir(a,b) 
+multiplicar(a,b) 

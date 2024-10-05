@@ -1,0 +1,12 @@
+linea 1
+linea 2 // arreglando 
+linea 3
+linea 4 // arreglando 4
+linea 5
+
+<<<<<<< HEAD
+nueva linea 8
+=======
+nueva linea 6
+nueva linea 7
+>>>>>>> main
